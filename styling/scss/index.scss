@@ -1,0 +1,31 @@
+@import 'variables.scss';
+@import 'modules/columns.scss';
+
+html{
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    padding: 8px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: $header-background;
+    color: $header-color;
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+.footer {
+    padding: 8px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $footer-background;
+    color: $footer-color;
+    text-align: center;
+  }

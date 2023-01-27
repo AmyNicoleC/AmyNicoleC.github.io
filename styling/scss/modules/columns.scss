@@ -1,4 +1,41 @@
-@import '../variables.scss';
+@import '../variables/variables.scss';
+
+// Row
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before,
+    &::after {
+        content: normal;
+    }
+}
+
+// Columns
+
+[class*="col-"] {
+    position: relative;
+    width: 100%;
+}
+
+.col-hidden {
+    flex: 0 0 0;
+    width: 0%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
 
 @for $i from 1 through 12 {
     .col-#{$i} {
@@ -7,7 +44,26 @@
     }
 }
 
-@media only screen and (max-width: $screen-size-xs) {
+@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+    .col-xs-hidden {
+        flex: 0 0 0;
+        width: 0%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .col-xs {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .col-xs-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+
     @for $i from 1 through 12 {
         .col-xs-#{$i} {
             flex: 0 0 calc((100%/12)*#{$i});
@@ -16,7 +72,26 @@
     }
 }
 
-@media only screen and (max-width: $screen-size-sm) {
+@media screen and (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    .col-sm-hidden {
+        flex: 0 0 0;
+        width: 0%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .col-sm {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .col-sm-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+
     @for $i from 1 through 12 {
         .col-sm-#{$i} {
             flex: 0 0 calc((100%/12)*#{$i});
@@ -25,7 +100,26 @@
     }
 }
 
-@media only screen and (max-width: $screen-size-md) {
+@media screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
+    .col-md-hidden {
+        flex: 0 0 0;
+        width: 0%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .col-md {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .col-md-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+
     @for $i from 1 through 12 {
         .col-md-#{$i} {
             flex: 0 0 calc((100%/12)*#{$i});
@@ -34,7 +128,26 @@
     }
 }
 
-@media only screen and (max-width: $screen-size-lg) {
+@media screen and (min-width: $screen-lg) and (max-width: $screen-lg-max) {
+    .col-lg-hidden {
+        flex: 0 0 0;
+        width: 0%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .col-lg {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .col-lg-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+
     @for $i from 1 through 12 {
         .col-lg-#{$i} {
             flex: 0 0 calc((100%/12)*#{$i});
@@ -43,15 +156,30 @@
     }
 }
 
-@media only screen and (max-width: $screen-size-xl) {
+@media screen and (min-width: $screen-xl) {
+    .col-xl-hidden {
+        flex: 0 0 0;
+        width: 0%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .col-xl {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .col-xl-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+
     @for $i from 1 through 12 {
         .col-xl-#{$i} {
             flex: 0 0 calc((100%/12)*#{$i});
             width: calc((100%/12)*#{$i});
         }
     }
-}
-
-[class*="col-"] {
-    width: 100%;
 }

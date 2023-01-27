@@ -1,0 +1,111 @@
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: $header-background;
+    color: $header-color;
+    text-align: left;
+    font-size: large;
+    font-weight: bolder;
+
+    .title {
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: $header-background;
+        color: $header-color;
+        text-align: left;
+        font-size: large;
+        font-weight: bolder;
+
+        .title {
+            padding: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: $header-background;
+        color: $header-color;
+        text-align: left;
+        font-size: large;
+        font-weight: bolder;
+
+        .title {
+            padding: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: $header-background;
+        color: $header-color;
+        text-align: left;
+        font-size: x-large;
+        font-weight: bolder;
+
+        .title {
+            padding: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: $screen-lg) and (max-width: $screen-lg-max) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: $header-background;
+        color: $header-color;
+        text-align: left;
+        font-size: x-large;
+        font-weight: bolder;
+
+        .title {
+            padding: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: $screen-xl) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: $header-background;
+        color: $header-color;
+        text-align: left;
+        font-size: x-large;
+        font-weight: bolder;
+
+        .title {
+            padding: 8px;
+        }
+    }
+}

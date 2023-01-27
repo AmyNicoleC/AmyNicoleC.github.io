@@ -1,0 +1,14 @@
+//== Media queries breakpoints
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+$screen-xs: 480px !default;
+$screen-sm: 576px !default;
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+$screen-xl: 1200px !default;
+
+// So media queries don't overlap when required, provide a maximum (used for max-width)
+$screen-xs-max: calc(#{$screen-sm} - 1px) !default;
+$screen-sm-max: calc(#{$screen-md} - 1px) !default;
+$screen-md-max: calc(#{$screen-lg} - 1px) !default;
+$screen-lg-max: calc(#{$screen-xl} - 1px) !default;

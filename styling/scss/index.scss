@@ -1,31 +1,106 @@
-@import 'variables.scss';
+@import 'variables/variables.scss';
 @import 'modules/columns.scss';
+@import 'modules/margins.scss';
+@import 'modules/paddings.scss';
+@import 'modules/header.scss';
+@import 'modules/footer.scss';
+@import 'modules/navigation.scss';
 
-html{
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html {
+  padding: 0;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+
+  body {
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+  }
 }
-.header {
-    padding: 8px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    background-color: $header-background;
-    color: $header-color;
-    text-align: left;
-    font-size: xx-large;
-    font-weight: bolder;
+.main-logo {
+  box-sizing: border-box;
+  padding: 0px;
+
+  background-color: #333;
+
+  img {
+    width: 0px;
+    height: 0px;
   }
-.footer {
-    padding: 8px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: $footer-background;
-    color: $footer-color;
-    text-align: center;
+}
+@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+  .main-logo {
+    box-sizing: border-box;
+    padding: 2px;
+  
+    background-color: #333;
+  
+    img {
+      width: auto;
+      height: 40px;
+    }
   }
+}
+
+@media screen and (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+  .main-logo {
+    box-sizing: border-box;
+    height: 48px;
+    padding: 4px;
+  
+    background-color: #333;
+  
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
+  .main-logo {
+    box-sizing: border-box;
+    height: 64px;
+    padding: 4px;
+  
+    background-color: #333;
+  
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) and (max-width: $screen-lg-max) {
+  .main-logo {
+    box-sizing: border-box;
+    height: 64px;
+    padding: 4px;
+  
+    background-color: #333;
+  
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-xl) {
+  .main-logo {
+    box-sizing: border-box;
+    height: 64px;
+    padding: 4px;
+  
+    background-color: #333;
+  
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+

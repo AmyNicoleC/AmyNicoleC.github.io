@@ -1,0 +1,66 @@
+@import 'var-font.scss';
+
+//== Navigation
+// Default Navigation styling
+$navigation-item-height: unset;
+$navigation-item-padding: 8px;
+
+$navigation-font-size: 14px;
+$navigation-sub-font-size: $font-size-default;
+$navigation-glyph-size: 20px;
+
+$navigation-color: #fff;
+$navigation-color-hover: #fff;
+$navigation-color-active: #fff;
+
+$navigation-sub-color: #fff;
+$navigation-sub-color-hover: #fff;
+$navigation-sub-color-active: #fff;
+
+// Sidebar
+$sidebar-bg: #303030;
+
+// Navigation Sidebar
+$navsidebar-bg: $sidebar-bg;
+$navsidebar-bg-hover: darken($navsidebar-bg, 10%);
+$navsidebar-bg-active: darken($navsidebar-bg, 10%);
+
+$navsidebar-sub-bg: $navsidebar-bg-hover;
+$navsidebar-sub-bg-hover: $navsidebar-bg;
+$navsidebar-sub-bg-active: $navsidebar-bg;
+
+$navsidebar-border-color: $navsidebar-bg-hover;
+
+$navsidebar-font-size: $font-size-default;
+$navsidebar-sub-font-size: $font-size-small;
+$navsidebar-glyph-size: 20px;
+
+$navsidebar-color: #fff;
+$navsidebar-color-hover: #fff;
+$navsidebar-color-active: #fff;
+
+$navsidebar-sub-color: #fff;
+$navsidebar-sub-color-hover: #fff;
+$navsidebar-sub-color-active: #fff;
+
+$navsidebar-width-closed: 52px;
+$navsidebar-width-open: 232px;
+
+// Navigation topbar
+$navtopbar-font-size: $font-size-default;
+$navtopbar-sub-font-size: $font-size-small;
+$navtopbar-glyph-size: 1.2em;
+
+$navtopbar-bg: $topbar-bg;
+$navtopbar-bg-hover: mix($topbar-bg, white, 85%);
+$navtopbar-bg-active: mix($topbar-bg, white, 85%);
+$navtopbar-color: #fff;
+$navtopbar-color-hover: $navtopbar-color;
+$navtopbar-color-active: $navtopbar-color;
+
+$navtopbar-sub-bg: $topbar-bg;
+$navtopbar-sub-bg-hover: $navtopbar-bg-hover;
+$navtopbar-sub-bg-active: $navtopbar-bg-hover;
+$navtopbar-sub-color: #fff;
+$navtopbar-sub-color-hover: #fff;
+$navtopbar-sub-color-active: #fff;

@@ -1,0 +1,97 @@
+@import '../variables/variables.scss';
+
+
+$flex-width-1: 1 0 calc((100%/2)+1%);
+$flex-width-2: 1 0 calc((100%/3)+1%);
+$flex-width-3: 1 0 calc((100%/4)+1%);
+$flex-width-4: 1 0 calc((100%/5)+1%);
+$flex-width-5: 1 0 calc((100%/6)+1%);
+$flex-width-6: 1 0 calc((100%/7)+1%);
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    @for $i from 1 through 6 {
+        .cell-#{$i} {
+            flex: 1 0 $flex-width-#{$i};
+            margin: 4px;
+            height: 64px;
+        }
+    }
+}
+
+@media screen and (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+    .flex-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        @for $i from 1 through 6 {
+            .cell-xs-#{$i} {
+                flex: 1 0 $flex-width-#{$i};
+                margin: 4px;
+                height: 64px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    .flex-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        @for $i from 1 through 6 {
+            .cell-sm-#{$i} {
+                flex: 1 0 $flex-width-#{$i};
+                margin: 4px;
+                height: 64px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
+    .flex-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        @for $i from 1 through 6 {
+            .cell-md-#{$i} {
+                flex: 1 0 $flex-width-#{$i};
+                margin: 4px;
+                height: 64px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen-lg) and (max-width: $screen-lg-max) {
+    .flex-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        @for $i from 1 through 6 {
+            .cell-lg-#{$i} {
+                flex: 1 0 $flex-width-#{$i};
+                margin: 4px;
+                height: 64px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen-xl) {
+    .flex-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        @for $i from 1 through 6 {
+            .cell-xl-#{$i} {
+                flex: 1 0 $flex-width-#{$i};
+                margin: 4px;
+                height: 64px;
+            }
+        }
+    }
+}

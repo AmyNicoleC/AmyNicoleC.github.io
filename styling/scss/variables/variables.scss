@@ -1,55 +1,20 @@
-@import 'brand-colors.scss';
-@import 'media-queries.scss';
-
-$header-color: #ffffff;
-$header-background: #606060;
-$footer-color: #ffffff;
-$footer-background: #303030;
+@import 'var-media-queries.scss';
+@import 'var-brand-colors.scss';
+@import 'var-header.scss';
+@import 'var-navigation.scss';
 
 $brand-logo: false;
 $brand-logo-height: 32px;
 $brand-logo-width: 32px;
 
 //== UI Customization
-// Default Font Size & Color
-$font-size-default: 14px;
-$font-color-default: #121212;
 
-// Font Sizes
-$font-size-large: 18px;
-$font-size-small: 12px;
-
-// Font Weights
-$font-weight-light: 100;
-$font-weight-normal: normal;
-$font-weight-semibold: 600;
-$font-weight-bold: bold;
-
-// Font Size Headers
-$font-size-h1: 31px;
-$font-size-h2: 26px;
-$font-size-h3: 24px;
-$font-size-h4: 18px;
-$font-size-h5: $font-size-default;
-$font-size-h6: 12px;
 
 // Global Border Color
 $border-color-default: #d8d8d8;
 $border-radius-default: 4px;
 
-// Topbar
-$topbar-bg: #303030;
-$topbar-minimalheight: 48px;
-$topbar-border-color: $border-color-default;
 
-// Sidebar
-$sidebar-bg: #303030;
-
-// Topbar mobile
-$m-header-height: 45px;
-$m-header-bg: $topbar-bg;
-$m-header-color: #fff;
-$m-header-title-size: 16px;
 
 // Background Colors
 // Backgrounds
@@ -59,65 +24,3 @@ $bg-color-secondary: #fff;
 // Default Link Color
 $link-color: $brand-primary;
 $link-hover-color: darken($link-color, 15%);
-
-//== Navigation
-// Default Navigation styling
-$navigation-item-height: unset;
-$navigation-item-padding: 8px;
-
-$navigation-font-size: 14px;
-$navigation-sub-font-size: $font-size-small;
-$navigation-glyph-size: 20px;
-
-$navigation-color: #fff;
-$navigation-color-hover: #fff;
-$navigation-color-active: #fff;
-
-$navigation-sub-color: #fff;
-$navigation-sub-color-hover: #fff;
-$navigation-sub-color-active: #fff;
-
-// Navigation Sidebar
-$navsidebar-bg: $sidebar-bg;
-$navsidebar-bg-hover: darken($navsidebar-bg, 10%);
-$navsidebar-bg-active: darken($navsidebar-bg, 10%);
-
-$navsidebar-sub-bg: $navsidebar-bg-hover;
-$navsidebar-sub-bg-hover: $navsidebar-bg;
-$navsidebar-sub-bg-active: $navsidebar-bg;
-
-$navsidebar-border-color: $navsidebar-bg-hover;
-
-$navsidebar-font-size: $font-size-default;
-$navsidebar-sub-font-size: $font-size-small;
-$navsidebar-glyph-size: 20px;
-
-$navsidebar-color: #fff;
-$navsidebar-color-hover: #fff;
-$navsidebar-color-active: #fff;
-
-$navsidebar-sub-color: #fff;
-$navsidebar-sub-color-hover: #fff;
-$navsidebar-sub-color-active: #fff;
-
-$navsidebar-width-closed: 52px;
-$navsidebar-width-open: 232px;
-
-// Navigation topbar
-$navtopbar-font-size: $font-size-default;
-$navtopbar-sub-font-size: $font-size-small;
-$navtopbar-glyph-size: 1.2em;
-
-$navtopbar-bg: $topbar-bg;
-$navtopbar-bg-hover: mix($topbar-bg, white, 85%);
-$navtopbar-bg-active: mix($topbar-bg, white, 85%);
-$navtopbar-color: #fff;
-$navtopbar-color-hover: $navtopbar-color;
-$navtopbar-color-active: $navtopbar-color;
-
-$navtopbar-sub-bg: $topbar-bg;
-$navtopbar-sub-bg-hover: $navtopbar-bg-hover;
-$navtopbar-sub-bg-active: $navtopbar-bg-hover;
-$navtopbar-sub-color: #fff;
-$navtopbar-sub-color-hover: #fff;
-$navtopbar-sub-color-active: #fff;
